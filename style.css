@@ -59,7 +59,7 @@ p {
 
 /* --- 5) THEME TOGGLE ICON --- */
 .theme-toggle {
-  position: fixed; 
+  position: absolute; 
   top: 20px;
   right: 20px;
   background: none;
