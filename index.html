@@ -1,1 +1,139 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hello, I'm Alex</title>
+
+  <!-- Google Font: Nunito Sans -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/833d5f91d4.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    /* 
+      Immediately set the correct theme class (dark or not) 
+      before the body is rendered to avoid flicker.
+    */
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <!-- Dark/Light Toggle (fixed at top-right) -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+    <!-- Default to moon; switched to sun if user has dark saved -->
+    <i class="fa-solid fa-moon"></i>
+  </button>
+
+  <!-- INTRO SECTION -->
+  <section class="section spacer-top spacer-bottom">
+    <h1>Hi, I'm Alex</h1>
+    <p>
+      I'm a Software Engineer currently working at <b>Amazon</b> living in sunny San Diego with a strong track record of designing and building scalable, high-performance systems.
+    </p>
+    <p>
+      I love tackling technical challenges, leading cross-functional collaborations, and driving innovative ideas forward. 
+      With experience in both startups and global tech organizations, I’ve developed a strong ability to adapt to diverse environments and deliver results that align with both immediate needs and long-term goals
+    </p>
+  </section>
+
+  <!-- EMPLOYMENT SECTION -->
+  <section class="section spacer-bottom employment-history">
+    <h2>Employment</h2>
+    <ul class="jobs-list">
+      <li class="job-item">
+        <div class="job-row">
+          <div class="company">Amazon</div>
+          <div class="position">
+            <span class="role">Software Engineer</span>
+            <span class="years">2019–Present</span>
+          </div>
+        </div>
+        <div class="job-description">
+          <p>Led impactful projects, including a cost-saving initiative that resulted in millions in annual savings, by designing scalable, high-availability systems and optimizing distributed services.
+          </p>
+        </div>
+      </li>
+      <li class="job-item">
+        <div class="job-row">
+          <div class="company">Corvus</div>
+          <div class="position">
+            <span class="role">Lead Developer</span>
+            <span class="years">2018–2019</span>
+          </div>
+        </div>
+        <div class="job-description">
+          <p>Developed an augmented reality try-on app for eyewear and implemented the architecture for Corvus Lens AR with computer vision.</p>
+        </div>
+      </li>
+      <li class="job-item">
+        <div class="job-row">
+          <div class="company">SimplePay</div>
+          <div class="position">
+            <span class="role">Co-founder / Technical Lead</span>
+            <span class="years">2015–2017</span>
+          </div>
+        </div>
+        <div class="job-description">
+          <p>Co-founded this fintech startup and served as the technical lead, designing the system and architecture for an application that enabled customers in Mexico to pay their bills seamlessly. 
+            Led the engineering team responsible for developing and delivering the platform.</p>
+        </div>
+      </li>
+      <li class="job-item">
+        <div class="job-row">
+          <div class="company">Softtek</div>
+          <div class="position">
+            <span class="role">Software Engineer</span>
+            <span class="years">2013–2015</span>
+          </div>
+        </div>
+        <div class="job-description">
+          <p>Developed modular web applications for GE Healthcare and collaborated closely with clients to deliver tailored solutions.
+          </p>
+        </div>
+      </li>
+      <li class="job-item">
+        <div class="job-row">
+          <div class="company">Rancho Cardenas</div>
+          <div class="position">
+            <span class="role">Software Engineer</span>
+            <span class="years">2011–2013</span>
+          </div>
+        </div>
+        <div class="job-description">
+          <p>Designed and implemented an ERP system to automate critical business operations. Delivered rapid web-based solutions to streamline workflows.
+          </p>
+        </div>
+      </li>
+    </ul>
+    <div class="resume-link">
+      <strong>Resume:</strong> 
+      <a href="cv.pdf" target="_blank">View/Download PDF</a>
+    </div>
+  </section>
+
+  <!-- SOCIAL LINKS -->
+  <section class="section spacer-bottom social-footer">
+    <a href="https://instagram.com/alexvargascl/" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/alexvargasdev/" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://x.com/elalexvargas" target="_blank" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </section>
+
+   <script src="script.js"></script>
+</body>
+</html>
